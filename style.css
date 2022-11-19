@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+/*
+    font-family: 'Nabla', cursive;
+    font-family: 'Megrim', cursive;
+*/
+
+:root {
+    --c01: white;
+    --c02: black;
+    --c1: #172236;
+    --c2: #c03128;
+    --c3: #862330;
+    --c4: #6b2037;
+    --c5: #432039;
+
+    --f1: 'Megrim', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--c1);
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: fit-content;
+}
+.name {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.name:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.name h1 {
+    display: inline-block;
+    font-family: var(--f1);
+    /* justify-content: center; */
+    /* top: 3em; */
+    color: var(--c01);
+    font-size: 18vh;
+    font-weight: 100;
+    padding: 20px;
+}
+#headerImg {
+    width: 100%;
+    height: 400px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+.container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c5);
+    padding: 20px 40px;
+    margin: 0;
+    text-decoration: none;
+    color: var(--c01);
+    font-family: var(--f1);
+    font-size: 40px;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+.container a:hover {
+    background-color: var(--c4);
+}
+
+article{ flex:1; } /* fills out space between container and footer*/
+.footer {
+    background-color: var(--c3);
+    width: 100%;
+    height: 100px;
+}
+
+
