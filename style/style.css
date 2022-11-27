@@ -17,7 +17,7 @@
     --f2: 'Nabla', cursive;
     --f3: calibri;
 
-    --bg1: url("./res/nightsky.png");
+    --bg1: url("../res/nightsky.png");
 }
 
 * {
