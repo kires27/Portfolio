@@ -13,6 +13,13 @@
     --c3: #064663;
     --c4: #5999b6;
 
+    --cat0: #606060;
+    --cat1: #6f3f17;
+    --cat2: #175877;
+    --cat3: #1d187a;
+    --cat4: #7a7a18;
+    --cat5: #187874;
+    
     --f1: 'Megrim', cursive;
     --f2: 'Nabla', cursive;
     --f3: calibri;
@@ -54,13 +61,14 @@ body {
     font-weight: 900;
     font-size: 25px;
     margin: 0 20px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 .githh {
     width: 40px;
     height: auto;
     filter: invert(1);
-    margin-top: 50px;
+    margin-bottom: 25px;
+
 }
 
 .border {
@@ -70,21 +78,69 @@ body {
     margin: 0 auto;
 }
 
+.chocobar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    color: var(--c01);
+    font-family: var(--f1);
+    font-size: 20px;
+}
+.chocoCount {
+    display: flex;
+    font-size: 20px;
+}
+#chocos {
+    margin-left: 6px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.chocoCategories {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    color: var(--c01);
+    font-family: var(--f3);
+    font-size: 15px;
+}
+.catSet {
+    display: flex;
+    margin: 5px;
+}
+.cat {
+    width: 20px;
+    height: 20px;
+    margin: 0 9px;
+    border-radius: 50%;
+}
+.cat0 { background-color: var(--cat0); }
+.cat1 { background-color: var(--cat1); }
+.cat2 { background-color: var(--cat2); }
+.cat3 { background-color: var(--cat3); }
+.cat4 { background-color: var(--cat4); }
+.cat5 { background-color: var(--cat5); }
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
-    justify-content: space-evenly;
+    justify-content: center;
     row-gap: 0.5rem;
     column-gap: 1rem;
     margin: 2rem;
-    margin-top: clamp(2rem, 5vh, 5rem);
+    margin-top: 0;
 }
 .container div {
     display: flex;
-    height: fit-content;
     background-color: var(--c2);
+    height: fit-content;
     border-radius: 6px;
     height: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+.container div:hover { 
+    background-color: var(--c3);
 }
 .wlink {
     width: 82%;
@@ -92,20 +148,18 @@ body {
     padding: 20px;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s ease-in-out;
-    white-space: pre-line;
+    text-align: center;
     text-decoration: none;
     color: var(--c01);
     font-family: var(--f1);
     font-size: 40px;
     font-weight: 500;
 }
-.container div:hover {
-    background-color: var(--c3);
-}
+
 .githt {
     height: 40px;
-    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
 }
 .githl {
     display: flex;
