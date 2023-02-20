@@ -338,6 +338,22 @@ article {
   font-weight: 1000;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #001220;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #073950;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5999b6;
+}
+
 @keyframes pulse {
   50% {
     opacity: 0.4;
