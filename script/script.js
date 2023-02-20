@@ -13,16 +13,22 @@ const url = "https://api.github.com/users/kire27/repos";
 
 // TODO scroll project_cards when side buttons are held
 
+console.log(
+    window.innerWidth
+);
+
 project_list.onclick = (e) => {
     const name = e.target.innerHTML;
     const object = document.getElementById(name);
-    const orgProp = 0.8;
+    const orgProp = "none";
 
-    object.style.opacity = 0.96;
+    if(!object) return;
+
+    object.style.boxShadow = "inset 0 0 2px 3px rgb(0, 35, 190)";
     object.style.transitionDuration = "1s"
     
     setTimeout(() => {
-        object.style.opacity = orgProp;
+        object.style.boxShadow = orgProp;
     }, 1500);
 }
 
