@@ -24,7 +24,7 @@ project_list.onclick = (e) => {
 
     if(!object) return;
 
-    object.style.boxShadow = "inset 0 0 2px 3px rgb(0, 35, 190)";
+    object.style.boxShadow = "inset 0 0 1.5px 2px rgb(0, 35, 190)";
     object.style.transitionDuration = "1s"
     
     setTimeout(() => {
