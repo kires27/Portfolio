@@ -61,7 +61,7 @@ body {
   color: #e4e4e4;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 300;
-  font-size: clamp(1rem, 1vw + 0.4rem, 2rem);
+  font-size: clamp(1.2rem, 1vw + 0.4rem, 2rem);
 }
 .intro .description a {
   display: grid;
@@ -71,7 +71,7 @@ body {
 .intro .description a img {
   filter: invert(1);
   width: clamp(2rem, 2.5vw + 0.5rem, 3rem);
-  padding: clamp(1rem, 1vw + 0.4rem, 2rem);
+  padding: clamp(1.2rem, 1vw + 0.4rem, 2rem);
   display: flex;
 }
 .intro .project-intro {
@@ -89,7 +89,7 @@ body {
 .intro .project-intro .counter {
   display: flex;
   flex-wrap: wrap;
-  font-size: clamp(1rem, 1vw + 0.4rem, 2rem);
+  font-size: clamp(1.2rem, 1vw + 0.4rem, 2rem);
   align-items: center;
   column-gap: 2rem;
   row-gap: 0.5rem;
@@ -97,10 +97,10 @@ body {
 }
 .intro .project-intro .counter h2 {
   display: flex;
-  font-size: clamp(1rem, 1vw + 0.4rem, 2rem);
+  font-size: clamp(1.2rem, 1vw + 0.4rem, 2rem);
 }
 .intro .project-intro .counter h2 #amount {
-  font-size: clamp(1rem, 1vw + 0.4rem, 2rem);
+  font-size: clamp(1.2rem, 1vw + 0.4rem, 2rem);
   font-weight: 600;
   width: fit-content;
   padding: 0;
