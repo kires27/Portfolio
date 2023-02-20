@@ -1,0 +1,47 @@
+<svg id="visual" viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <rect x="0" y="0" width="1920" height="1080" fill="#001220"></rect>
+
+    <g fill="none" stroke="#001260" stroke-width="5">
+        <circle r="261" cx="1099" cy="350">
+            <animateMotion 
+                dur="12s" repeatCount="indefinite"
+                path="M 0 0 c-31,-20 45,-88 37,-32 q-4,29 -36,32" />
+        </circle>
+
+        <circle r="55" cx="1601" cy="384">
+            <animateMotion 
+                dur="38s" repeatCount="indefinite"
+                path="M 0 0 c62,-92 190,-111 111,-12 c-39,54 -19,75 -65,96 c-34,20 -106,5 -46,-84 l0,0" />
+        </circle>
+
+        <circle r="16" cx="1690" cy="786">
+            <animateMotion 
+                dur="8s" repeatCount="indefinite"
+                path="M 0 0 c46,-21 96,119 27,70 c-19,-21 -113,-43 -26,-71 l-1,1" />
+        </circle>
+
+        <circle r="208" cx="237" cy="321">
+            <animateMotion 
+                dur="15s" repeatCount="indefinite"
+                path="M 0 0 c14,-36 22,-5 6,34 c-11,15 13,106 -16,33 q0,-31 9,-65" />
+        </circle>
+
+        <circle r="69" cx="214" cy="903">
+            <animateMotion 
+                dur="30s" repeatCount="indefinite"
+                path="M 0 0 c51,-4 87,40 6,22 c-39,5 -95,38 -84,11 q42,-28 80,-33" />
+        </circle>
+
+        <circle r="92" cx="588" cy="645">
+            <animateMotion 
+                dur="18s" repeatCount="indefinite"
+                path="M 0 0 c4,-68 137,13 41,66 c-98,38 -130,-6 -74,-33 q30,-2 33,-31" />
+        </circle>
+
+        <circle r="95" cx="1174" cy="920">
+            <animateMotion 
+                dur="14s" repeatCount="indefinite"
+                path="M 0 0 c34,-5 59,6 38,22 c-52,28 -100,26 -88,1 q13,-21 52,-24" />
+        </circle>
+    </g>
+</svg>

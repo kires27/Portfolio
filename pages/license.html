@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="./res/logo/logo1_favicon.svg">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <title>Haam | License</title>
+
+    <style>
+        body {
+            text-align: center;
+            padding: 1rem;
+            color: rgb(200, 200, 200);
+            margin: 0 auto;
+        }
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            color: white;
+            margin: 2rem;
+        }
+        img {
+            filter: invert(1);
+            width: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html"> 
+        <img src="../res/icons/arr-left.svg" alt="">
+        Haam
+    </a>
+
+    <div id="text">ss</div>
+
+    <script>
+        fetch('../LICENSE.txt')
+            .then(response => response.text())
+            .then((data) => 
+                document.getElementById("text").innerText = data
+            )        
+    </script>
+</body>
+</html>

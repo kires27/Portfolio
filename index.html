@@ -5,120 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="icon" href="./res/a.png">
+    <link rel="icon" href="./res/logo/logo1_favicon.svg">
     <link rel="stylesheet" href="./style/style.css">
 
-    <title>haam</title>
+    <title>Haam</title>
 </head>
 <body>
-    <div class="header"> 
-        <h1>haam</h1>
-        <p>HAAM is a personal project showcase website</p>
-        <a href="https://github.com/kire27/haam">
-            <img class="githh" src="./res/gh.png" alt="haam">
-        </a>
+    <div class="header">
+        <img src="./res/logo/logo1_animated.svg" class="logo" alt="logo"> 
+        <h1>
+            <p>apps</p>
+            Haam
+        </h1>
+        
     </div>
 
-    <hr class="border">
-
-    <div class="chocobar">
-        <div class="chocoCount">
-            <h2>Project count:</h2>
-            <p id="chocos"></p>
-        </div>
-    </div>
-
-    
     <div class="container" id="container">
+        <div class="intro">
+            <div class="description"> 
+                <p>
+                    Haam is my a personal project showcase website. You can find more information on my github.
+                </p>
+                <a href="https://github.com/kire27/haam">
+                    <img src="./res/icons/github.svg" alt="haam">
+                </a>
+                
+            </div>
 
-        <div id="project-list" class="project-list"></div>
+            <div class="project-intro">
+                <div class="counter">
+                    <h2>Project count:
+                        <p id="amount"></p>
+                    </h2>
 
-        <div id="project-cards" class="project-cards">
+                    <input type="text" id="list-filter" placeholder="Filter by language">
+                </div>
+                <hr>
 
-            <div>
-                <a class="wlink" href="https://www.domath.haam.space">DoMath</a>
-                <a class="githl" href="https://github.com/kire27/basic-math-problem-generator">
-                    <img class="githt cat5" src="./res/gh.png" alt="haam">
-                </a>
-            </div>
-    
-            <div>
-                <a class="wlink" href="https://www.spacechat.haam.space"">SpaceChat</a>
-                <a class="githl" href="https://github.com/kire27/Space-Chat">
-                    <img class="githt cat4" src="./res/gh.png" alt="haam">
-                </a>
-            </div>
-            
-            <div>
-                <a class="wlink" href="https://www.tetriso.haam.space">Tetriso</a>
-                <a class="githl" href="https://github.com/kire27/tetriso">
-                    <img class="githt cat5" src="./res/gh.png" alt="haam">
-                </a>
-            </div> 
-    
-            <div>
-                <a class="wlink" href="https://www.skalica.haam.space">Skalica</a>
-                <a class="githl" href="https://github.com/kire27/Skalica">
-                    <img class="githt cat1" src="./res/gh.png" alt="haam">
-                </a>
-            </div>
-    
-            <div>
-                <a class="wlink" href="https://www.historyofcomputers.haam.space">History of computers</a>
-                <a class="githl" href="https://github.com/kire27/History-of-Computers">
-                    <img class="githt cat1" src="./res/gh.png" alt="haam">
-                </a>
-            </div>
-    
-            <div> 
-                <a class="wlink" href="https://www.alimeli.haam.space">Alimeli</a>
-                <a class="githl" href="https://github.com/kire27/Alimeli">
-                    <img class="githt cat1" src="./res/gh.png" alt="haam">
-                </a>
-            </div>
-    
-            <div>
-                <a class="wlink" href="https://www.lll.haam.space">Lazy Language Learner</a>
-                <a class="githl" href="https://github.com/kire27/LazyLanguageLearner">
-                    <img class="githt cat0" src="./res/gh.png" alt="haam">
-                </a>
-            </div>
-    
-            <div>
-                <a class="wlink" href="https://github.com/kire27/Calculator"> Android Calculator </a>
-                <a class="githl " href="https://github.com/kire27/Calculator">
-                    <img class="githt cat3" src="./res/gh.png" alt="haam">
-                </a>
-            </div>
-    
-            <div>
-                <a class="wlink" href="https://github.com/kire27/FlappyBird"> Python FlappyBird </a>
-                <a class="githl" href="https://github.com/kire27/FlappyBird">
-                    <img class="githt cat2" src="./res/gh.png" alt="haam">
-                </a>
-            </div>
-    
-            <div>
-                <a class="wlink" href="https://github.com/kire27/SpaceInvaders"> Python Space Invaders </a>
-                <a class="githl" href="https://github.com/kire27/SpaceInvaders">
-                    <img class="githt cat2" src="./res/gh.png" alt="haam">
-                </a>
-            </div>
-    
-            <div>
-                <a class="wlink" href="https://www.dalf.haam.space"> Dalf </a>
-                <a class="githl" href="https://github.com/kire27/dalf">
-                    <img class="githt cat5" src="./res/gh.png" alt="haam">
-                </a>
+                <div id="project-list" class="project-list"></div>
             </div>
         </div>
+
+        <div class="card-setup">
+            <button class="card-button" id="arr-left">
+                <img src="./res/icons/arr-left.svg" alt="left">
+            </button>
+
+            <div id="project-cards" class="project-cards"></div>
+
+            <button class="card-button" id="arr-right">
+                <img src="./res/icons/arr-right.svg" alt="right">
+            </button>
+
+        </div>
+
+        <button class="top-button" id="arr-top">
+            <img src="./res//icons/arr-up.svg" alt="pageTop">
+        </button>
 
     </div>
     
     <article></article>
 
-    <footer class="footer">
-        Copyright © 2022 HAAM
+    <footer id="footer" class="footer">
+        <img src="./res/logo/logo1_static.svg" alt="logo">
+        <a href="./pages/license.html" id="footerC"></a>
     </footer>
 
     <script type="text/javascript" src="./script/script.js"></script>

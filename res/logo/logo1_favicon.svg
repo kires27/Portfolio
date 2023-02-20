@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	    viewBox="0 0 924 1156" style="enable-background:new 0 0 924 1156;" xml:space="preserve">
+        <style type="text/css">
+            .st0{
+                fill:none;
+                stroke:#FFFFFF;
+                stroke-width:110;
+                stroke-linecap:round;
+            }
+            .st1{
+                fill:none;
+                stroke:#FFFFFF;
+                stroke-width:80;
+                stroke-linecap:round;
+            }
+        </style>
+        <g id="cube1" inkscape:groupmode="layer" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+            <animateMotion 
+                id="cu1"
+                dur="8s" 
+                begin="8s;cu1.end+8s"
+                path="M 0 0 c16,-5 37,-10 49,-14 q12,-7 -27,5 q-35,9 -22,9" />
+            <path class="st0" d="M577.9,658.5c0,0,163.9-93.9,245.7-140.7c0-89.5,0-179.4,0-268.9c-77.3-49.6-154.9-99.3-232.2-148.9
+                c-53.3,30.5-106.7,61.1-160.1,91.6c-53,30.3-85.7,86.7-85.6,147.7c0,56.8,0,113.6,0,170.2L577.9,658.5z"/>
+            <path class="st1" d="M823.6,517.8c-77.3-49.6-154.9-99.3-232.1-148.9"/>
+            <path class="st1" d="M345.7,509.6c81.8-46.8,163.9-93.9,245.7-140.7"/>
+            <path class="st1" d="M591.4,100c0,89.5,0,179.4,0,268.9"/>
+        </g>
+        <g id="cube2" inkscape:groupmode="layer" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+            <animateMotion 
+                id="cu2"
+                dur="8s" 
+                begin="8s;cu2.end+8s"
+                path="M 0 0 c-15,2 -59,24 -48,14 q22,-9 32,-12 q20,-9 16,-2" />
+            <path class="st0" d="M345.7,509.6c-81.8,46.8-163.9,93.8-245.7,140.7c0,89.5,0,179.4,0,268.9c77.3,49.6,154.9,99.3,232.1,148.9
+                c53.3-30.5,106.7-61.1,160.1-91.6c53-30.3,85.7-86.7,85.6-147.7c0-56.8,0-170.2,0-170.2L345.7,509.6z"/>
+            <path class="st1" d="M100,650.3c77.3,49.6,154.9,99.3,232.1,148.9"/>
+            <path class="st1" d="M332.2,1068.1c0-89.5,0-179.4,0-268.9"/>
+            <path class="st1" d="M332.1,799.2c81.8-46.8,163.9-93.9,245.7-140.7"/>
+        </g>
+    </svg>
