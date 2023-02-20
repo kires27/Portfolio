@@ -64,7 +64,7 @@ function filterCards(filter, project_cards) {
     }
 
     for (let tag=0; tag<tags.length; tag++) {
-        
+
         // check if the allLanguages contains word from input
         if (!allLanguages.includes(filterLow)) {
             (project_cards.children[tag]).classList.remove("filtered")

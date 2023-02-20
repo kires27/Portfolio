@@ -22,7 +22,7 @@ body {
   color: #e4e4e4;
 }
 .header .logo {
-  width: clamp(5rem, 10vw + 1rem, 22rem);
+  width: clamp(6rem, 10vw + 1rem, 22rem);
 }
 .header h1 {
   font-size: clamp(5rem, 10vw + 1rem, 20rem);
@@ -35,7 +35,7 @@ body {
   display: flex;
   font-weight: 300;
   justify-content: flex-end;
-  width: clamp(14.1rem, 28.2vw + 2.82rem, 56.4rem);
+  width: clamp(14.3rem, 28.2vw + 3rem, 56.4rem);
   margin-top: clamp(5rem, 10vw + 1rem, 20rem);
   font-size: clamp(1.5rem, 3vw + 0.5rem, 5rem);
 }
@@ -88,8 +88,11 @@ body {
 }
 .intro .project-intro .counter {
   display: flex;
+  flex-wrap: wrap;
   font-size: clamp(1rem, 1vw + 0.4rem, 2rem);
   align-items: center;
+  column-gap: 2rem;
+  row-gap: 0.5rem;
   justify-content: space-between;
 }
 .intro .project-intro .counter h2 {
@@ -104,13 +107,19 @@ body {
   margin: 0 5px;
 }
 .intro .project-intro .counter #list-filter {
-  width: clamp(5.5rem, 20vw + 2rem, 15rem);
+  width: clamp(8.8rem, 20vw + 2rem, 15rem);
   padding: 5px 10px;
   border: none;
-  background-color: #e4e4e4;
+  background-color: rgba(53, 53, 53, 0.5);
   outline: none;
   border-radius: 10px;
   box-sizing: border-box;
+}
+.intro .project-intro .counter #list-filter::placeholder {
+  color: #9d9da3;
+}
+.intro .project-intro .counter #list-filter:focus {
+  color: #e4e4e4;
 }
 .intro .project-intro hr {
   margin: 10px 0;
@@ -163,7 +172,8 @@ body {
   border: none;
   border-radius: 50px;
   padding: 35px 8px;
-  background-color: #064663;
+  margin: 0 0.5rem;
+  background-color: #073950;
   cursor: pointer;
   outline: none;
 }
@@ -178,10 +188,8 @@ body {
 .project-cards {
   display: flex;
   overflow-x: scroll;
-  margin: 0 1rem;
   padding: 0;
   gap: 1rem;
-  border-radius: 6px;
   scroll-behavior: smooth;
   align-items: center;
 }
@@ -193,16 +201,15 @@ body {
 }
 
 .skeleton-card {
-  background-color: rgb(199, 199, 199);
+  background-color: rgba(53, 53, 53, 0.5);
   width: clamp(10rem, 30vw + 10rem, 75rem);
   min-width: 15rem;
   height: 15rem;
   border-radius: 15px;
-  opacity: 0.8;
 }
 .skeleton-card * {
   border-radius: 15px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgba(77, 77, 77, 0.5);
   margin: 1rem;
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
@@ -219,12 +226,11 @@ body {
 .card {
   display: grid;
   grid-template-rows: min-content;
-  min-width: 15rem;
-  max-width: 15rem;
+  min-width: 17rem;
+  max-width: 17rem;
   height: 100%;
   color: #000;
-  background-color: #e4e4e4;
-  opacity: 0.8;
+  background-color: rgba(53, 53, 53, 0.5);
   border-radius: 15px;
   padding: 15px;
   align-items: flex-start;
@@ -232,7 +238,7 @@ body {
 .card * {
   display: flex;
   justify-content: space-between;
-  color: #000;
+  color: #e4e4e4;
   height: fit-content;
 }
 .card .card-source {
@@ -242,6 +248,7 @@ body {
   padding: 6px;
   width: 30px;
   height: 30px;
+  filter: invert(1);
 }
 .card .card-name {
   font-size: 2rem;
@@ -250,6 +257,7 @@ body {
 }
 .card .card-name[href*="//"]:after {
   margin: 0 5px;
+  filter: invert(1);
   content: url("../res/icons/exter-link.svg");
 }
 .card .card-created {
@@ -275,7 +283,7 @@ body {
   font-size: 0.75rem;
   font-weight: 700;
   margin: 5px 0;
-  background-color: rgb(198, 212, 231);
+  background-color: #073950;
   padding: 5px 8px;
   border-radius: 20px;
 }
@@ -300,7 +308,7 @@ body {
   background-color: #7e3333;
   cursor: pointer;
   width: fit-content;
-  margin: 0 auto;
+  margin: 20px auto;
   outline: none;
 }
 .top-button img {
@@ -337,6 +345,11 @@ article {
   }
 }
 @media only screen and (max-width: 700px) {
+  .card {
+    width: clamp(10rem, 30vw + 10rem, 75rem);
+    max-width: none;
+    min-width: none;
+  }
   .card-button {
     display: none;
   }
