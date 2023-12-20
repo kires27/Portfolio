@@ -1,3 +1,5 @@
+TODO
+    when user holds side buttons to scroll, use mechanizm from tetriso to move scroll bar when key is down
 
 <a name="readme-top"></a>
 
