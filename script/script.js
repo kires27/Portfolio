@@ -48,7 +48,7 @@ window.onresize = () => {
     if(window.innerWidth < 700) project_cards.scroll(0, 0);
 }  
 
-footer.innerText = `© ${new Date().getFullYear()} Haam apps`;
+footer.innerText = `© ${new Date().getFullYear()} kkire apps`;
 
 fetchJsonData(url, project_list, project_cards);
 
