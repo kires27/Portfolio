@@ -9,7 +9,7 @@ const arr_top = document.getElementById("arr-top");
 
 const filter = document.getElementById("list-filter")
 
-const url = "https://api.github.com/users/kire27/repos";
+const url = "https://api.github.com/users/kires27/repos";
 
 // TODO scroll project_cards when side buttons are held
 
@@ -125,7 +125,7 @@ function BuildList(data, listParent) {
     }
 }
 
-async function BuildCards(data, filter) {
+async function BuildCards(data) {
     if (!data) return;
 
     for (let key in data) {

@@ -18,26 +18,24 @@ body {
   margin: 30px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   color: #e4e4e4;
 }
 .header .logo {
   width: clamp(6rem, 10vw + 1rem, 22rem);
 }
 .header h1 {
-  font-size: clamp(5rem, 10vw + 1rem, 20rem);
+  font-size: clamp(5rem, 7vw + 1rem, 9rem);
+  line-height: 1;
   font-weight: 300;
   margin: 0;
   padding: 0;
 }
 .header p {
-  position: absolute;
   display: flex;
-  font-weight: 300;
+  font-weight: 200;
   justify-content: flex-end;
-  width: clamp(14.3rem, 28.2vw + 3rem, 56.4rem);
-  margin-top: clamp(5rem, 10vw + 1rem, 20rem);
-  font-size: clamp(1.5rem, 3vw + 0.5rem, 5rem);
+  font-size: clamp(1.5rem, 2vw + 0.5rem, 3rem);
 }
 
 .container {
@@ -52,7 +50,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  margin: 2vw;
+  margin: 0 2vw;
 }
 .intro p {
   text-align: center;
